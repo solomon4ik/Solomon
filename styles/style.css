@@ -1,49 +1,66 @@
-.main-container{
-    background-image: url("../img/world-map.png");
-    height: 1000px;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    overflow: hidden;
+body {
+    background-image: url(../img/space.jpg);
+    left: 200px;
+    position: relative;
 }
-.head {
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: bold;
+    
+  
+.orbit {
+    position: absolutes;
+    margin: 30px auto;
+    height: 500px;
+    top: 240px;
+    
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: or;
+
+}
+.orbit:hover {
+    animation-play-state: paused;
+}
+
+.sun {
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 43%;
+    top: 175px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:#fffb00;
+    transition: 500ms linear;
+    }
+.mercury {
+    position: relative;
+    top: 28%;
+    left: -12px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff0003;
+    transition: 500ms linear;
     
 }
-.sub-head {
-    letter-spacing: 2px;
-    font-family: cursive;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
+.sun:hover {
+    transform: scale(1.2);  
+    
+   }
+.mercury:hover {
+    
+    transform: scale(1.2);   
 }
-.main-list {
-    text-align: center;
-    font-style: italic;
-    list-style: none;
+@keyframes or {
+    from {
+        transform: rotate(360deg);
+    } 
+    to {
+        transform: rotate(0deg);
+    }
 }
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
- }
- 
- a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
- }
- 
- a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
- }
- 
- a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline
+
+
