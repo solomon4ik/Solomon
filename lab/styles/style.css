@@ -16,7 +16,7 @@
     text-align: center;
 }
 .up__text-input {
-    color: blueviolet
+    color: blueviolet;
 }
 .text__date {
     border: 1px solid black;
@@ -27,13 +27,15 @@
 /* Bottom block */
 .bottom {
     background-color: green;
+    
 }
 
 /* Bottom block end */
 
 /* menu block */
 .menu {
-    padding: 5px;
+    padding: 15px;
+    margin-left: 15px;
 }
 .menu__button {
     padding: 10px;
@@ -58,6 +60,7 @@
 /* slider block */
 .slider {
     padding: 15px;
+    margin-left: 15px;
     height: 300px;
     width: 300px;
 }
